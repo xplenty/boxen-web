@@ -14,4 +14,4 @@ test:
   port: <%= ENV["BOXEN_POSTGRESQL_PORT"] || 5432 %>
 
 production:
-  development
+  url: <%= ENV['DATABASE_URL'] %>
